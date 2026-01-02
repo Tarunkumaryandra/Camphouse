@@ -7,7 +7,7 @@ pool:
 steps:
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)'
+    rootFolderOrFile: '$(Build.sourcesDirectory)'
     includeRootFolder: false
     archiveType: zip
     archiveFile: '$(Build.ArtifactStagingDirectory)/site.zip'
